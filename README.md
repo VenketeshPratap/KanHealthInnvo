@@ -35,3 +35,10 @@ AI Model Integration
 The above code and instructions should provide a comprehensive foundation for developing and deploying a healthcare chatbot using Flask for the backend and HTML/CSS/JavaScript for the frontend. The AI models are integrated to provide symptom-based diagnosis and advice.
 
 
+<img width="777" alt="image" src="https://github.com/VenketeshPratap/KanHealthInnvo/assets/49091267/6503e7f7-6875-4f94-bc51-1a10a518b518">
+
+<img width="629" alt="image" src="https://github.com/VenketeshPratap/KanHealthInnvo/assets/49091267/d4f15145-191a-4ea3-8eb3-3d414e2e7140">
+
+<img width="933" alt="image" src="https://github.com/VenketeshPratap/KanHealthInnvo/assets/49091267/b8639b1c-69d9-49d6-92d1-0415670c7e82">
+
+
