@@ -17,17 +17,6 @@ import sqlite3
 import re
 import hashlib
 import os
-from dotenv import load_dotenv
-import json
-from openai import OpenAI
-
-
-# Load environment variables from .env file
-load_dotenv()
-
-# Retrieve the API key from environment variables
-your_api_key= os.getenv('OPENAI_API_KEY')
-client = OpenAI(api_key=your_api_key)
 
 
 app = Flask(__name__)
@@ -301,30 +290,6 @@ def tree_to_code(tree, feature_names):
             # print("confidence level is " + str(confidence_level))
 
     recurse(0, 1)
-
-
-
-
-
-
-
-def generate_summary(symtoms):
-
-    # prompt = f"Create Program Documentation for the given {code} program:\n\n{code}"
-    # message_text = [{"role": "system", "content": prompt}]
-
-    completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system",
-             "content": "Generate a report based on user symtoms and suggest him to follow steps to avoid."}
-        ]
-    )
-
-    print(completion.choices[0].message)
-    summary=completion.choices[0].message
-    print(summary)
-    return summary['choices'][0]['message']['content'].strip()
 
 def get_db():
     if 'db' not in g:
