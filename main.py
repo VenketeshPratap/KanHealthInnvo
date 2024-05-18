@@ -16,7 +16,6 @@ from flask import Flask, render_template, request, redirect, url_for, session, g
 import sqlite3
 import re
 import hashlib
-import os
 
 
 app = Flask(__name__)
