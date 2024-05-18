@@ -1,6 +1,12 @@
 Username-admin
 pass-admin
 
+Health Monitoring Application
+Objective: Create a full-stack application that offers health monitoring and advice using AI
+technologies. The backend should be implemented using Python and related libraries for
+processing data and integrating AI models. The frontend should utilise Vanilla JS or ReactJS
+for dynamic components and user interactions.
+
 Backend Setup
 Install Python and Pip: Make sure you have Python and pip installed.
 Create a Virtual Environment:
