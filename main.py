@@ -1,4 +1,3 @@
-
 import re
 import pandas as pd
 import pyttsx3
@@ -12,8 +11,6 @@ import csv
 import warnings
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-
-
 
 from flask import Flask, render_template, request, redirect, url_for, session, g, jsonify
 import sqlite3
@@ -34,8 +31,6 @@ client = OpenAI(api_key=your_api_key)
 
 
 app = Flask(__name__)
-
-# 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
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
