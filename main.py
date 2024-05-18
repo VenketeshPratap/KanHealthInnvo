@@ -1,5 +1,5 @@
 # main.py
-
+import  os
 from flask import Flask, render_template, request, redirect, url_for, session, g, jsonify
 import sqlite3
 import re
@@ -8,8 +8,8 @@ import hashlib
 import json
 from openai import OpenAI
 
-your_api_key = "sk-proj-oHnX2WmjF4voq78VJzxZT3BlbkFJPy0UVYCKGDjuHB2N6ITR"
-client = OpenAI(api_key=your_api_key)
+api_key = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key)
 
 
 app = Flask(__name__)
