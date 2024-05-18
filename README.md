@@ -1,3 +1,6 @@
+Username-admin
+pass-admin
+
 Backend Setup
 Install Python and Pip: Make sure you have Python and pip installed.
 Create a Virtual Environment:
