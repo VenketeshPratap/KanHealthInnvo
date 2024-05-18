@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symptom Checker | Know Your Health Better</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('form').submit(function (event) {
-                event.preventDefault();
-                $.ajax({
-                    type: 'POST',
-                    url: '/submit', /* Assuming a backend route to handle form data */
-                    data: $('form').serialize(),
-                    success: function (response) {
-                        $('#result').html(response.result);
-                    }
-                });
-            });
-        });
-    </script>
-    <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -114,17 +97,16 @@
         }
     </style>
 </head>
-
-<body>
+	<body>
     <header>
         <h1>Know Your Health Better</h1>
         <h2>Symptom Checker</h2>
     </header>
-
     <main>
         <section id="symptom-assessment">
             <h3>Let's Assess Your Symptoms</h3>
-            <form id="symptom-form">
+
+            <form id="symptom-form" method="POST" action="/submit">
                 <div class="form-group">
                     <label for="symptoms">Select Symptom:</label>
                     <select id="symptoms" name="symptoms">
@@ -146,18 +128,20 @@
                     <textarea id="feeling" name="feeling" rows="4" placeholder="Describe how you're feeling generally"></textarea>
                 </div>
                 <button type="submit">Submit</button>
+
             </form>
         </section>
 
         <section id="result">
             <h3>Your Results</h3>
-            <p id="result-message">Please select a symptom and submit the form to see potential causes.</p>
-        </section>
+        <!-- Display the result here -->
+        <p id="result-message">{{ result }}</p>
+    </section>
+
     </main>
 
     <footer>
         <p>This symptom checker is intended for informational purposes only and should not be a substitute for professional medical advice. Always consult with a doctor for diagnosis and treatment.</p>
     </footer>
-</body>
-
+	</body>
 </html>
