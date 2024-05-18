@@ -394,5 +394,4 @@ def submit():
     # Render the template with the result
     return render_template('index.html', result=result)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
