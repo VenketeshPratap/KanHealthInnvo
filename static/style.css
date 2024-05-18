@@ -1,0 +1,57 @@
+/* Header */
+.header {
+  padding: 5px 120px;
+  width: 150px;
+  height: 70px;
+  background-color:#89CFF0 /* Darker blue shade for a professional touch */
+  color: #FFFFFF; /* White text for contrast */
+  font-weight: bold;
+}
+
+/* Border Container */
+.border {
+  padding: 80px 50px;
+  width: 400px;
+  height: 450px;
+  border: 1px solid #2E4053; /* Darker blue border */
+  border-radius: 5px;
+  background-color: #F4F6F7; /* Light grey background for a clean look */
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 40px;
+  background-color: #3498DB; /* Bright blue for action buttons */
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Textbox */
+.textbox {
+  padding: 10px 40px;
+  background-color: #F4F6F7; /* Light grey to match the border background */
+  color: #34495E; /* Dark blue text for contrast */
+  border: 1px solid #BDC3C7; /* Slight border for input fields */
+  border-radius: 10px;
+}
+
+/* Placeholder Text */
+::placeholder {
+  color: #95A5A6; /* Placeholder text in a softer shade of grey */
+  opacity: 1;
+  font-weight: bold;
+}
+
+/* Additional Styling */
+.word {
+  color: #34495E; /* Dark blue text for emphasis */
+  font-weight: bold;
+}
+
+.bottom {
+  color: #2E4053; /* Darker blue for footer text */
+ /* font-weight: bold;*/
+}
