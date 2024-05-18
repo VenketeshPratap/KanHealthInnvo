@@ -1,15 +1,22 @@
 # main.py
-import  os
+
 from flask import Flask, render_template, request, redirect, url_for, session, g, jsonify
 import sqlite3
 import re
 import hashlib
 # from hchatbot.chat_bot import run_chatbot
+import os
+from dotenv import load_dotenv
 import json
 from openai import OpenAI
 
-api_key = os.getenv('OPENAI_API_KEY')
-client = OpenAI(api_key)
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the API key from environment variables
+your_api_key= os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=your_api_key)
 
 
 app = Flask(__name__)
